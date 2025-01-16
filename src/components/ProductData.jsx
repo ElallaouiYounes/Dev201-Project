@@ -1,20 +1,20 @@
 export const productData = [
   {
     id: 1,
-    name: "Intel Core i7 12700KF",
+    name: "Intel Core i5-13600K",
     price: "2500 DH",
     rating: 4.7,
     sold: "700+ sold",
     image:
-      "public/images/Intel-Core-i5-11400F-2.6-GHz-4.4-GHz-SetupGame.jpg.png",
+      "public/images/i5.webp",
   },
   {
     id: 2,
-    name: "ASUS Core i9 12900H",
+    name: "Acer Aspire 3 AMD Ryzen 3 7320U",
     price: "7500 DH",
     rating: 4.8,
     sold: "800+ sold",
-    image: "public/images/laptopsunder500-2048px-5452.png",
+    image: "public/images/lap.webp",
   },
   {
     id: 3,
@@ -22,7 +22,7 @@ export const productData = [
     price: "800 DH",
     rating: 4.6,
     sold: "400+ sold",
-    image: "public/images/Red_Dead_Redemption_II09.webp",
+    image: "public/images/red.webp",
   },
   {
     id: 4,
@@ -30,7 +30,7 @@ export const productData = [
     price: "12500 DH",
     rating: 4.9,
     sold: "900+ sold",
-    image: "public/images/images.png",
+    image: "public/images/gd.webp",
   },
   {
     id: 5,
@@ -38,7 +38,7 @@ export const productData = [
     price: "550 DH",
     rating: 4.5,
     sold: "600+ sold",
-    image: "public/images/Razer-DeathAdder-V2.jpeg",
+    image: "public/images/rm.webp",
   },
   {
     id: 6,
@@ -46,7 +46,7 @@ export const productData = [
     price: "1200 DH",
     rating: 4.7,
     sold: "500+ sold",
-    image: "public/images/Corsair-K70-RGB.webp",
+    image: "public/images/ck.webp",
   },
   {
     id: 7,
@@ -78,7 +78,7 @@ export const productData = [
     price: "900 DH",
     rating: 4.5,
     sold: "800+ sold",
-    image: "public/images/Logitech-G733.jpeg",
+    image: "public/images/lh.webp",
   },
   {
     id: 11,
@@ -86,7 +86,7 @@ export const productData = [
     price: "4200 DH",
     rating: 4.7,
     sold: "300+ sold",
-    image: "public/images/MSI-RTX-3060-Ti.jpeg",
+    image: "public/images/rx.webp",
   },
   {
     id: 12,
@@ -94,6 +94,6 @@ export const productData = [
     price: "22000 DH",
     rating: 4.8,
     sold: "150+ sold",
-    image: "public/images/Apple-MacBook-Pro-14.jpeg",
+    image: "public/images/mac.webp",
   },
 ];

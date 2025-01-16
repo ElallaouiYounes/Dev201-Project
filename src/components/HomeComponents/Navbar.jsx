@@ -4,7 +4,7 @@ import { RiHeart2Line,RiUserLine } from "react-icons/ri";
 import { FaSearch } from "react-icons/fa";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
 import { TiThMenuOutline } from "react-icons/ti";
-import { BsBoxSeam } from "react-icons/bs";
+import { AiOutlineSlack } from "react-icons/ai";
 
 
 const Navbar = () => {
@@ -13,9 +13,9 @@ const Navbar = () => {
       {/* start first row */}
       <div className="w-[100%] flex justify-between">
         {/* start logo */}
-        <div className="font-extrabold flex items-center justify-center gap-1 special-font">
-          <BsBoxSeam color="#1877F2" size={30} />
-          <p className="text-3xl text-black">EBOX</p>
+        <div className="font-extrabold flex items-center justify-center gap-1 special-font cursor-pointer">
+          <AiOutlineSlack color="#40adb5" size={30} />
+          <p className="text-3xl text-black">WobiTech</p>
         </div>
         {/* end logo */}
 

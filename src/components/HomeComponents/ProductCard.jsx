@@ -26,12 +26,14 @@ import { FaStar } from "react-icons/fa";
 
 const Card = ({ product }) => {
   const { name, price, rating, sold, image } = product;
+
+  const dispalName = name.length >= 24 ? name.slice(0, 22) + "..." : name;
   return (
     <div className="flex flex-col justify-center items-center border-2 rounded-sm w-[230px] h-[300px] m-4 py-2">
       <div className="w-[90%] h-[70%] bg-contain bg-no-repeat bg-center" style={{ backgroundImage: `url(${image})` }}>
       </div>
       <div className="flex flex-col justify-center w-[90%] h-[20%] font-semibold">
-        <p>{name}</p>
+        <p>{dispalName}</p>
         <p>{price}</p>
       </div>
       <div className="flex flex-row items-center gap-2 w-[90%] h-[10%]">

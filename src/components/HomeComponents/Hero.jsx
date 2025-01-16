@@ -2,6 +2,8 @@ import React from 'react'
 import heroBanner from '../../../public/images/hero-banner.png'
 
 const Hero = () => {
+  // #D8514D
+  // #40adb5
   return (
     <div className='flex items-center justify-between bg-[#40adb5] w-full h-[400px]'>
         <div className='w-[50%] pl-10'>

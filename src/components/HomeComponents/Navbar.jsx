@@ -1,15 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { MdOutlineShoppingCart } from "react-icons/md";
-import { RiHeart2Line,RiUserLine } from "react-icons/ri";
+import { RiHeart2Line, RiUserLine } from "react-icons/ri";
 import { FaSearch } from "react-icons/fa";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
 import { TiThMenuOutline } from "react-icons/ti";
 import { AiOutlineSlack } from "react-icons/ai";
-
+import { IoCloseSharp } from "react-icons/io5";
+import Dropdown from "./Dropdown";
 
 const Navbar = () => {
+  const [ShowDropdown, setShowDropdown] = useState(false);
+  // #D8514D
+  // #40adb5
+  const handleShow = () => {
+    {
+      ShowDropdown === false ? setShowDropdown(true) : setShowDropdown(false);
+    }
+  };
   return (
-    <div className="Navbar-box text-white flex flex-wrap items-center px-6 border-b border-gray-900 pt-2">
+    <div className="Navbar-box text-white flex flex-wrap items-center px-6 border-b border-gray-900 pt-2 gap-4">
       {/* start first row */}
       <div className="w-[100%] flex justify-between">
         {/* start logo */}
@@ -50,14 +59,29 @@ const Navbar = () => {
       {/* end first row */}
 
       {/* start second row */}
-      <div className="w-[100%] flex">
+      <div className="w-[100%] flex flex-row items-start">
         {/* start categories dropdown list   */}
-        <div className="dropdown w-[33.3%] ">
-          <div className="flex justify-between items-center border-2 gap-1 px-2 rounded-sm border-gray-700 cursor-pointer w-52">
-            <TiThMenuOutline size={16} color="black" />
-            <p className="text-black font-bold">All categories</p>
-            <IoIosArrowDropdownCircle size={14} color="black" />
-          </div>
+        <div className="w-[33.3%] ">
+          {!ShowDropdown && (
+            <div className="dropdown w-[100%] mb-1 mt-1" onClick={handleShow}>
+              <div className="flex justify-between items-center border-2 gap-1 px-2 rounded-sm border-gray-700 cursor-pointer w-52">
+                <TiThMenuOutline size={16} color="black" />
+                <p className="text-black font-bold">All categories</p>
+                <IoIosArrowDropdownCircle size={14} color="black" />
+              </div>
+            </div>
+          )}
+
+          {ShowDropdown && (
+            <div className="w-[100%] mb-1 mt-1" onClick={handleShow}>
+              <div className="flex items-center justify-start gap-1 cursor-pointer w-52">
+                <IoCloseSharp size={26} color="#545454" className="mt" />
+                <p className="text-[#545454] text-lg font-bold">Close</p>
+              </div>
+            </div>
+          )}
+
+          {ShowDropdown && <Dropdown />}
         </div>
         {/* end categories dropdown list */}
 

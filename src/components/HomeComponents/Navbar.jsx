@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { RiHeart2Line, RiUserLine } from "react-icons/ri";
-import { FaSearch } from "react-icons/fa";
+import { FaSearch, FaCannabis } from "react-icons/fa";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
 import { TiThMenuOutline } from "react-icons/ti";
 import { AiOutlineSlack } from "react-icons/ai";
@@ -18,13 +18,13 @@ const Navbar = () => {
     }
   };
   return (
-    <div className="Navbar-box text-white flex flex-wrap items-center px-6 border-b border-gray-900 pt-2 gap-4">
+    <div className="Navbar-box text-white flex flex-wrap items-center px-6 border-b border-gray-500 pt-2 gap-4">
       {/* start first row */}
       <div className="w-[100%] flex justify-between">
         {/* start logo */}
         <div className="font-extrabold flex items-center justify-center gap-1 special-font cursor-pointer">
-          <AiOutlineSlack color="#40adb5" size={30} />
-          <p className="text-3xl text-black">WobiTech</p>
+          <FaCannabis color="#333333" size={30} />
+          <p className="text-3xl text-[#333333]">WobiTech</p>
         </div>
         {/* end logo */}
 

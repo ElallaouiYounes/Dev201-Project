@@ -59,6 +59,7 @@
   .box-links{
     display: none;
   }
+  
 }
 
 /* Small devices (landscape phones, tablets) */
@@ -93,8 +94,26 @@
   }
   .dropdown{
     display: none;
+
   }
   .box-links{
     display: none;
   }
+  .first-row{
+    justify-content: center;
+  }
 }
+
+@media (max-width:810px){
+  .first-row{
+    gap: 18px;
+  }
+}
+
+
+
+
+
+
+
+

@@ -5,8 +5,7 @@ export const productData = [
     price: "2500 DH",
     rating: 4.7,
     sold: "700+ sold",
-    image:
-      "public/images/i5.webp",
+    image:  "public/images/i5.webp",
   },
   {
     id: 2,

@@ -22,7 +22,6 @@
 // export default ProductCard;
 
 import { FaStar } from "react-icons/fa";
-
 const Card = ({ product }) => {
   const { name, price, rating, sold, image } = product;
 

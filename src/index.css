@@ -44,6 +44,9 @@
   .box-links{
     display: flex;
   }
+  .cat-row{
+    display: flex;
+  }
 }
 
 /* Medium devices (tablets) */
@@ -61,6 +64,9 @@
     display: none;
   }
   .box-links{
+    display: none;
+  }
+  .cat-row{
     display: none;
   }
 }
@@ -82,6 +88,9 @@
   .box-links{
     display: none;
   }
+  .cat-row{
+    display: none;
+  }
 }
 
 /* Extra small devices (phones) */
@@ -99,6 +108,9 @@
     display: none;
   }
   .box-links{
+    display: none;
+  }
+  .cat-row{
     display: none;
   }
 }

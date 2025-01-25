@@ -21,14 +21,10 @@
 
 // export default ProductCard;
 
-<<<<<<< HEAD
 import React, { useState } from "react";
 import { FaStar } from "react-icons/fa";
 import { MdOutlineShoppingCart } from "react-icons/md";
 
-=======
-import { FaStar } from "react-icons/fa";
->>>>>>> origin/JnahYoussef
 const Card = ({ product }) => {
   const { name, price, rating, sold, image } = product;
   const [addToCart,setAddToCart] = useState(false);

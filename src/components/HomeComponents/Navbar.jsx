@@ -24,7 +24,7 @@ const Navbar = () => {
         {/* start logo */}
         <div className="font-extrabold flex items-center justify-center gap-1 special-font cursor-pointer">
           <FaCannabis color="#333333" size={30} />
-          <p className="text-3xl text-[#333333]">WobiTech</p>
+          <p className="text-3xl text-[#333333]">Lunzo</p>
         </div>
         {/* end logo */}
 
@@ -61,7 +61,7 @@ const Navbar = () => {
       {/* start second row */}
       <div className="w-[100%] flex flex-row items-start">
         {/* start categories dropdown list   */}
-        <div className="w-[33.3%] ">
+        <div className="cat-row w-[33.3%]">
           {!ShowDropdown && (
             <div className="dropdown w-[100%] mb-1 mt-1" onClick={handleShow}>
               <div className="flex justify-between items-center border-2 gap-1 px-2 rounded-sm border-gray-700 cursor-pointer w-52">
